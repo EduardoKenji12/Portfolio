@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma viagem inesqueível</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Pacotes</li>
+                <li>Taxas</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+        
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
+    </header>
+    <section>
+        <h2>Conheça nossos pacotes</h2>
+        <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ac orci molestie, porta enim sit amet, dictum nibh. Proin scelerisque non mi at tincidunt. Nunc sem sem, mollis id ullamcorper non, eleifend sed lacus. Nullam accumsan egestas urna in maximus. Mauris euismod, enim in lacinia fermentum, mi mi dapibus nisi, id finibus nisi nulla eu orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non tristique sapien, non egestas orci. Vestibulum bibendum augue ut venenatis tempor. Aliquam mattis dolor posuere, posuere est ut, porttitor tellus. Nulla et ligula pellentesque, feugiat orci non, dapibus mi. 
+            <br><br>
+            <a href="https://br.lipsum.com/feed/html">Link</a>
+            <hr>
+        </p>
+        <figure>
+            <img src="img/nossos-pacotes/monte-fuji.jpg" alt="Japão - Monte Fuji">
+            <figcaption>Japão - Monte Fuji</figcaption>
+        </figure>
+        <figure>
+            <img src="img/nossos-pacotes/queenstown-nz.jpg" alt="Queesntown vista de cima">
+            <figcaption>Nova Zelândia - Queenstown</figcaption>
+        </figure>
+        <figure>
+            <img src="img/nossos-pacotes/paris-eiffel.jpg" alt="Torre Eiffel">
+            <figcaption>França - Paris</figcaption>
+        </figure>
+    </section>
+   <video controls width="500px">
+    <source src="video/Vídeo.mp4.mp4" type="video/mp4">
+    <source src="video/Vídeo.webm.webm" type="video/webm">
+    Seu navegador não suporta o formato de video. <a href="video/Vídeo.mp4.mp4">Baixe aqui</a>
+   </video>
+   <br><br>
+
+   <section>
+    <h2>Taxas e serviços</h2>
+    <p>Veja nossas taxas e serviços</p>
+        <table border>
+            <caption>Descrição de serviços e respectivos valores
+            <thead>
+            </caption>
+                <tr>
+                    <th>Serviços</th>
+                    <th>Taxas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reserva de hotel</td>
+                    <td>R$100,00</td>        
+                </tr>
+                <tr>
+                    <td>Aluguel de carro</td>
+                    <td>R$80,00</td>
+                </tr>
+                <tr>
+                    <td>Compra de passagem</td>
+                    <td>R$200,00</td>
+                </tr>
+            </tbody>
+        </table>
+   </section>
+
+   <section>
+        <h2>Orçamento</h2>
+        <form method="GET" action="">
+
+            <fieldset>
+                <legend>Dados de viagem</legend>
+                <label>Nome</label><br>
+                <input type="text" name="nome"><br><br>
+    
+                <label>Email</label><br>
+                <input type="email" required name="email"><br><br>
+    
+                <label>Data de Ida</label><br>
+                <input type="date" name="dataIda"><br><br>
+                
+                <label>Data de Volta</label><br>
+                <input type="date" name="dataVolta"><br><br>
+    
+                <label>Quantidade de pessoas</label><br>
+                <input type="number" name="qtdPessoas"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Destino</legend>
+                <label>
+                    <br><input type="radio" name="destino" value="cartaoCredito">Jãpao
+                </label>
+                <label>
+                    <br><input type="radio" name="destino" value="boleto">Nova Zelândia
+                </label>
+                <label>
+                    <br><input type="radio" name="destino" value="pix">França
+                </label>
+            </fieldset>
+
+            <fieldset>
+                    <legend>Quais serviços deseja contratar</legend>
+                    <label>
+                        <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+                    </label>
+                    <label>
+                        <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+                    </label>
+                    <label>
+                        <br><input type="checkbox" name="veiculos" value="Veículo">Aluguem de Veículo
+                    </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="cartaoCredito">Cartão de crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="boleto">Boleto
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="pix">Pix
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <br><select name="prazoPagamento">
+                    <option value="aVista">A vista</option>
+                    <option value="5x" selected>5x sem juros</option>
+                    <option value="10x">10x com juros</option>
+                </select>
+            </fieldset>
+           
+
+            <br><label>Comentários</label><br>
+            <textarea rows="5" name="comentario"></textarea><br><br>
+
+            <button>Salvar</button>
+
+        </form>
+   </section>
+
+    <hr>
+    <footer>
+        <p>Desenvolvido por Eduardo Kenji</p>
+    </footer>
+
+</body>
+</html>
